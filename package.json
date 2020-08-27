@@ -1,7 +1,7 @@
 {
   "name": "protozaun",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "js/index.js",
   "private": true,
   "repository": "git@github.com:SebastianBaltes/protozaun.git",
   "author": "Sebastian Baltes <baltes@objectcode.de>",
@@ -20,9 +20,12 @@
     "wepack-cli": "^0.0.1-security"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "jsx-dom": "^6.4.19",
+    "lodash": "^4.17.20",
     "three": "^0.120.0"
+  },
+  "scripts": {
+    "start": "yarn webpack-dev-server",
+    "build": "yarn webpack"
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import * as THREE from "three";
 
 export default class Stage extends Component {

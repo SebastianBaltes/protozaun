@@ -1,0 +1,131 @@
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.app {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.stage {
+    z-index: -1;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.button {
+    display: inline-flex;
+    padding: 1em;
+    border-radius: 4px;
+    background-color: lightblue;
+    font-size: x-large;
+    cursor: pointer;
+    margin-right: 3em;
+}
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.page {
+    padding: 5em;
+    position: absolute;
+}
+
+.question {
+    font-size: x-large;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.help {
+}
+
+.grow {
+    transition: transform .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 10vw;
+    height: 10vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5em;
+    margin-right: 2em;
+    position: relative;
+}
+
+.tile.form {
+    width: 20vw;
+    height: 20vw;
+    background-size: contain;
+    background-position: center center;
+}
+
+
+.tile .title {
+    position: absolute;
+    bottom: -2em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.comment {
+    position: fixed;
+    bottom: 0;
+    font-style: italic;
+    color: red;
+    padding: 1em;
+}
+
+.fade {
+    transition: opacity .3s ease-in-out;
+}
+.fade.grow {
+    transition: transform .2s ease-in-out, opacity .3s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.breadcrums {
+    position: relative;
+    min-height: 4em;
+    padding: 1em;
+}
+
+.breadcrum {
+    width: 4em;
+    height: 4em;
+    position: relative;
+    margin:0;
+}
